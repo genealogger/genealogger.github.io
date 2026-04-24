@@ -12,9 +12,9 @@ export default function Home() {
             genealogists.
           </span>
         </h1>
-        <h2 className="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+        {/* <h2 className="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
           Updates weekly.
-        </h2>
+        </h2> */}
         {/* <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto mb-64">
           <input
             type="email"
