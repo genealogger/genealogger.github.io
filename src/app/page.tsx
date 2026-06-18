@@ -12,6 +12,31 @@ export default function Home() {
             genealogists.
           </span>
         </h1>
+
+        <img src="/screenshots/RecordView-Source.png" />
+
+        <section>
+          <div className="mx-auto max-w-3xl text-left text-lg">
+            <p className="text-slate-800 mb-6 leading-relaxed">
+              For family historians and amateur archivists overwhelmed by
+              scattered files and uncataloged heirlooms,{" "}
+              <strong>GenFiles</strong> is an{" "}
+              <strong>Investigative Workspace</strong> that transforms raw
+              historical data into a structured chain of evidence.
+            </p>
+
+            <p className="text-slate-800 mb-6 leading-relaxed">
+              Unlike standard family tree software that hides source documents
+              behind data fields, GenFiles places your historical records,
+              digital citations, and physical artifacts at the absolute center
+              of the research experience. GenFiles offers a friction-free,
+              10-second ingestion workflow for your data, alongside a powerful
+              multi-tab workbench designed to help you cross-reference clues,
+              weigh conflicting evidence, and instantly export beautiful
+              research reports.
+            </p>
+          </div>
+        </section>
         {/* <h2 className="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
           Updates weekly.
         </h2> */}

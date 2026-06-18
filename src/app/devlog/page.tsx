@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const LOGS = [
   {
     title: "Week 1: Breaking Ground",
@@ -17,12 +19,12 @@ export default function DevLogIndex() {
             key={log.href}
             className="flex justify-between items-center border-b pb-4"
           >
-            <a
+            <Link
               href={log.href}
               className="text-xl font-medium hover:text-indigo-600"
             >
               {log.title}
-            </a>
+            </Link>
             <span className="text-slate-400 font-mono text-sm">{log.date}</span>
           </li>
         ))}

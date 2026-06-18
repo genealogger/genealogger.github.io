@@ -33,7 +33,7 @@ export default function RootLayout({
                 </span>
               </div>
             </Link>
-            {/* <div className="space-x-8 text-sm font-medium text-slate-600">
+            <div className="space-x-8 text-sm font-medium text-slate-600">
               <a href="#features" className="hover:text-brand-600 transition">
                 Features
               </a>
@@ -46,7 +46,7 @@ export default function RootLayout({
               >
                 GitHub
               </a>
-            </div> */}
+            </div>
           </nav>
           {children}
         </div>
