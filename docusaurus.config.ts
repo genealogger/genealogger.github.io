@@ -68,6 +68,14 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    {
+      src: "https://challenges.cloudflare.com/turnstile/v0/api.js",
+      async: true,
+      defer: true,
+    },
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/android-chrome-192x192.png",

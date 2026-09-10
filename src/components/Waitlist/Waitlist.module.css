@@ -1,0 +1,49 @@
+.waitlistWrapper {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  display: flex;
+  gap: 0.5rem;
+  overflow: hidden;
+
+  &:focus-within {
+    border-color: var(
+      --ifm-color-primary
+    ); /* Uses your Docusaurus theme primary color */
+    box-shadow: 0 0 0 3px rgba(53, 120, 229, 0.2); /* Subtle glow */
+  }
+
+  input {
+    border: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.25rem 0.55rem;
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent;
+  }
+
+  button {
+    background: var(--ifm-color-primary);
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none !important;
+    border-radius: 0;
+    outline: none !important;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+}
+.waitlistDisclaimer {
+  font-size: 0.75rem;
+  color: var(--text-dimmed);
+  padding-top: 0.4rem;
+  text-align: center;
+}
+
+.waitlistCard {
+  margin: 0 auto;
+  max-width: 460px;
+}
