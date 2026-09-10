@@ -19,6 +19,8 @@
   --ifm-menu-link-padding-vertical: 0.25rem;
   --ifm-menu-link-padding-horizontal: 0.5rem;
   --ifm-navbar-link-color: oklch(37.3% 0.034 259.733);
+
+  --text-dimmed: #0f172a;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
   margin: 0;
 
   /* Gradient starting from top-right down to bottom-left */
-  /* background: linear-gradient(to bottom left, #ffffff, oklch(98.5% 0 0)); */
+  background: linear-gradient(to bottom left, #ffffff, oklch(98.5% 0 0));
 
   background-attachment: fixed;
 
@@ -45,6 +47,10 @@ body {
   color: #0f172a;
 }
 
+.hero {
+  height: 50vh;
+}
+
 .hero__title {
   font-size: 4rem;
   font-weight: 900;
@@ -53,7 +59,6 @@ body {
 }
 
 .section-border {
-  background-color: #ffffff;
   /* A very soft gray line separating the bottom of this section */
   border-bottom: 1px solid #f1f5f9;
 }
