@@ -4,7 +4,7 @@ import { Card } from "../Card/Card";
 
 export function Waitlist() {
   return (
-    <form action="https://submit-form.com/auU9wxB82" method="POST">
+    <form action="https://submit-form.com/auU9wxB82">
       <div className={classes.waitlistWrapper}>
         <input
           type="email"
