@@ -1,0 +1,52 @@
+---
+title: Search and Query Language
+sidebar_position: 3
+---
+
+# Search & Quick Query Language
+
+Locating evidence across your workspace is instant. Whether you're hunting for a specific document or building complex filtered lists, our search engine scans everything—from titles and metadata to **full OCR transcriptions** in your attachments.
+
+---
+
+### 🛡️ 100% Private & Local Search
+All search indexing and query processing run **entirely on your local device**. Your queries and indexed record contents are never sent to external servers or cloud indexers.
+
+---
+
+## Access Points
+
+* ⚡ **Spotlight Search (`Cmd+K` / `Ctrl+K`):** Press `Cmd+K` anywhere in the app to open the floating quick-search bar.
+* 🔍 **Sidebar Search:** Open the **Search** tab in the sidebar for full-screen results and filter controls.
+* 📌 **Contextual Search:** Search directly within a specific **Person**, **Place**, or **Topic** view to filter related records.
+
+---
+
+## Query Language Reference
+
+Combine field keys, quotes for phrases, and terms to narrow down your results with surgical precision.
+
+| Field Key | Usage & Syntax | Example Query |
+| :--- | :--- | :--- |
+| **`person:`** | Filter by associated people | `person:"John Doe"` or `person:doe` |
+| **`place:`** | Filter by associated places | `place:"New York"` |
+| **`tag:`** | Filter by custom tags | `tag:"vital record"` |
+| **`type:`** | Filter by entity type | `type:person` \| `type:place` \| `type:topic` \| `type:record` \| `type:source` |
+| **`flag:`** | Filter by record state/status | `flag:isfavorite` \| `flag:hasissues` |
+| **`category:`**| Filter by record category | `category:"immigration"` \| `category:"vital records"` |
+| *(Free Text)* | Unkeyed terms match full text | `farmer census 1880` |
+
+> 💡 **Pro-Tip:** Combine multiple operators in a single query string:  
+> `tag:"vital record" person:"John Doe" place:"New York" flag:isfavorite`
+
+---
+
+## Scope: What Gets Searched?
+
+Search indexes every field across your workspace:
+
+* 👤 **People:** First/last name, gender, birth date, death date, and notes.
+* 📍 **Places:** Formatted place names and spatial coordinates.
+* 📚 **Topics & Sources:** Title names and notes.
+* 📄 **Records:** Record titles, categories, and custom notes.
+* 📎 **Attachments & Media:** File names, embedded captions, EXIF keywords, and **full OCR transcriptions**.
