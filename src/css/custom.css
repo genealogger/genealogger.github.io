@@ -1,0 +1,154 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #144de1;
+  --ifm-color-primary-dark: #1245cb;
+  --ifm-color-primary-darker: #1141bf;
+  --ifm-color-primary-darkest: #0e369e;
+  --ifm-color-primary-light: #225aeb;
+  --ifm-color-primary-lighter: #2d62ec;
+  --ifm-color-primary-lightest: #4f7cef;
+  --ifm-leading: 1rem;
+  --ifm-hr-margin-vertical: 0;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-menu-link-padding-vertical: 0.25rem;
+  --ifm-menu-link-padding-horizontal: 0.5rem;
+  --ifm-navbar-link-color: oklch(37.3% 0.034 259.733);
+}
+
+body {
+  /* Ensure the background covers the full viewport height */
+  min-height: 100vh;
+  margin: 0;
+
+  /* Gradient starting from top-right down to bottom-left */
+  /* background: linear-gradient(to bottom left, #ffffff, oklch(98.5% 0 0)); */
+
+  background-attachment: fixed;
+
+  /* 2. Keeps the gradient stretched beautifully across the whole screen */
+  background-size: cover;
+}
+
+.container--narrow {
+  --ifm-container-width: 800px;
+  --ifm-container-width-xl: 900px;
+}
+
+.text-dimmed {
+  /* color: oklch(44.2% 0.017 285.786); */
+  color: #0f172a;
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: oklch(27.4% 0.006 286.033);
+}
+
+.section-border {
+  background-color: #ffffff;
+  /* A very soft gray line separating the bottom of this section */
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.theme-doc-sidebar-menu {
+  font-size: 14px;
+}
+
+.navbar__link {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.menu__list-item {
+  font-weight: 500;
+}
+
+.menu__caret:before {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
+}
+
+.markdown {
+  padding: 1rem 0 1rem 0;
+
+  h1 {
+    margin: 0 0 1.1rem 0;
+    padding: 0;
+    font-weight: 900;
+    --ifm-h1-font-size: 2rem;
+  }
+
+  h2 {
+    margin: 0 0 1.1rem 0;
+    padding: 0;
+    font-weight: 800;
+    --ifm-h2-font-size: 1.5rem;
+  }
+
+  h3 {
+    margin: 0 0 1.1rem 0;
+    padding: 0;
+    font-weight: 800;
+    --ifm-h3-font-size: 1.2rem;
+    color: oklch(37.3% 0.034 259.733);
+  }
+
+  code {
+    line-height: 1.75;
+    padding: 0.125rem 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  ul {
+    margin: 0 0 1.1rem 0;
+  }
+
+  p {
+    margin: 0 0 1.1rem 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1.75;
+    font-size: 1rem;
+  }
+
+  hr {
+    height: 0.5px;
+    margin: 0 0 1.1rem 0;
+  }
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.text-lg {
+  font-size: 1.25rem;
+}
+.text-xl {
+  font-size: 1.5rem;
+}
+
+.footer--dark {
+  background: oklch(27.4% 0.006 286.033);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

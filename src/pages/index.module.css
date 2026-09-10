@@ -1,0 +1,85 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.hero {
+}
+
+.heroBanner {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  color: oklch(44.2% 0.017 285.786);
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.3;
+  color: oklch(27.4% 0.006 286.033);
+  letter-spacing: -0.025em;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+.sectionBorder {
+  background-color: #ffffff;
+  /* A very soft gray line separating the bottom of this section */
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.shadowBox {
+  /* Box dimensions and background */
+  background-color: #ffffff;
+
+  /* 1. Rounded Corners */
+  border-radius: 16px;
+
+  /* 2. Large, Smooth Drop Shadow */
+  /* Syntax: box-shadow: x-offset y-offset blur-radius spread-radius color; */
+  /* box-shadow: 0 20px 40px -10px oklch(95.2% 0.017 285.786); */
+}
+
+.stageTable {
+  border: 0;
+
+  thead {
+    background: none !important;
+    td {
+      color: #444;
+    }
+  }
+  th {
+    text-align: left;
+    border: 0;
+    padding: 0.5rem 1rem 0.5rem 0;
+  }
+
+  td {
+    border: 0;
+    padding-left: 0;
+  }
+
+  tr {
+    border-top: 0;
+    background: none;
+    border-bottom: 0.5px solid #ddd;
+  }
+}
