@@ -11,15 +11,15 @@ export function Waitlist() {
           name="email"
           placeholder="Enter email for beta access..."
         />
+        <div
+          className="cf-turnstile"
+          data-sitekey="0x4AAAAAAEvh2uVTMZb9XrIx"
+        ></div>
         <button type="submit">Secure Beta Spot</button>
       </div>
       <div className={classes.waitlistDisclaimer}>
         We'll email you when the beta is ready in late 2026.
       </div>
-      <div
-        className="cf-turnstile"
-        data-sitekey="0x4AAAAAAEvh2uVTMZb9XrIx"
-      ></div>
     </form>
   );
 }
