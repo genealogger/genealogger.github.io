@@ -68,6 +68,16 @@ const config: Config = {
     ],
   ],
 
+  headTags: [
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preconnect",
+        href: "https://challenges.cloudflare.com",
+      },
+    },
+  ],
+
   scripts: [
     {
       src: "https://challenges.cloudflare.com/turnstile/v0/api.js",
